@@ -1,1 +1,153 @@
+/* Qr code styling */
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+:root{
+    --bgcolor : teal;
+    --dark-bgcolor: #0a1928;
+    --dark-container-color: #173546;
+}
+
+body{
+    background-color: var(--bgcolor);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    color: white;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.light-mode{
+    background-color: white;
+    color: black;
+}
+
+.darkbg{
+    background-color: #173546;
+}
+
+.dark-mode{
+    background-color: #4a7094;
+    color: white;
+}
+
+.dark-mode .link-icon{
+    color: black;
+}
+#theme-changer{
+    border: none;
+    font-size: 14px;
+    background-color: transparent;
+    color: white;
+}
+
+.theme-btn{
+    background-image:  linear-gradient(to left, #ff3f15, #ff8800); 
+    padding: 6px 16px;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    padding: 24px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+
+h1{
+    font-size: 18px;
+    magin-block: 26px;
+}
+
+.input-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    margin-block: 20px;
+}
+
+.input-with-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.input-area input{
+    border: none;
+    outline: none;
+    padding: 8px 30px;
+    width: 80%;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+
+.input-area button{
+    border: none;
+    padding: 8px 48px;
+    background-image: linear-gradient(to left, #6655ff, #556dff);
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+
+.qr-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.link-icon{
+    display: inline-block;
+    position: relative;
+    left: 24px;
+}
+
+.msg{
+    color: red;
+    font-size: 12px;
+    margin-block: 0px;
+    display: none;
+}
+
+.show-error{
+    display: block;
+}
+
+.show-success{
+    display: block;
+    color: #289f3d;
+}
+
+
+.footer-text{
+    margin-top: 30px;
+    font-size: 12px;
+    border-top: 1px solid black;
+    padding: 6px 0px;
+    width: 100%;
+    text-align: center;
+  }
